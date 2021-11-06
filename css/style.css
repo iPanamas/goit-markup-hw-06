@@ -725,7 +725,7 @@ color: var(--primary-text-color);
     margin-bottom: 10px;
 }
 
-.modal-form:focus {
+.modal-form:focus-within> .modal-icon {
     fill: var(--accent-color);
 }
 
