@@ -772,7 +772,6 @@ color: var(--primary-text-color);
     left: 15px;
 }
 
-
 .form-textarea {
     width: 448px;
     height: 120px;
@@ -797,22 +796,44 @@ color: var(--primary-text-color);
     justify-content: center;
     margin-bottom: 40px;
 }
-
 .modal-check {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
+    padding-left: 22px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 
-.modal-checkbox {
-    margin-right: 9px;
+    color: var(--second-text-color);
+
 }
 
 .policy-link {
     text-decoration-line: underline;
-
     color: var(--accent-color);
 }
+
+.modal-checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;   
+}
+
+.checkbox {
+    position: absolute;
+    margin-left: -22px;
+    width: 16px;
+    height: 15px;
+
+    background-image: url(../img/icons/checkbox-off.svg);
+    transition: 100ms linear;
+}
+
+.modal-checkbox:checked + .checkbox {
+    background-image: url(../img/icons/checkbox-on.svg);
+}
+
 
 .modal-button {
     display: block;
